@@ -1,0 +1,131 @@
+/* 共通設定 */
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    min-width: 820px;
+}
+
+header {
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin: 0 10px;
+}
+
+h1 {
+    margin-left: 20px;
+    padding: 0;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+}
+
+p {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 20px;
+    text-wrap: nowrap;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 20px;
+    background-color: rgb(180, 220, 255);
+    border-width: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(100, 150, 205);
+}
+
+/* index.php用設定 */
+form {
+    width: 70%;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+#name,
+#email {
+    height: 30px;
+    width: 40%;
+}
+
+#detail {
+    height: 90px;
+    width: 40%;
+}
+
+label {
+    cursor: pointer;
+}
+
+span {
+    color: rgb(200, 0, 0);
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* confirm.php用設定 */
+#check {
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    margin: 20px auto 0 auto;
+    width: 600px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    text-wrap: nowrap;
+    border: 1px solid rgb(5, 0, 70);
+}
+
+td {
+    width: 400px;
+    padding: 5px;
+    word-wrap: break-word;
+    border: 1px solid rgb(5, 0, 70);
+}
+
+#back-button {
+    margin-bottom: 20px;
+    background-color: rgb(160, 160, 160);
+}
+
+#back-button:active {
+    background-color: rgb(120, 120, 120);
+}

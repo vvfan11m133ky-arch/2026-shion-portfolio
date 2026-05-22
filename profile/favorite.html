@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAVORITE | Shion's profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+</head>
+
+<body id="fav">
+    <header>
+        <h1>PROFILE</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="prefecture.html">prefecture</a></li>
+                <li><a href="favorite.html">favorite</a></li>
+                <li><a href="hobby.html">hobby</a></li>
+                <li><a href="reference.html">reference</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="favorite">
+            <h2>好きなもの</h2>
+            <div class="introduction">
+                <img src="images/favorite.webp" alt="favorite" class="subvisual">
+                <p>私の好きなもの、甘いものについて紹介していきます。</p>
+            </div>
+            <div class="detail">
+                <p>甘いものは大抵好きです！<br>
+                    下の写真のようなスイーツを見ると、すごく食べたくなります。<br>
+                    いつもは気を付けないとすぐお菓子を食べてしまうのが悩みです…</p>
+            </div>
+            <!-- carousel -->
+            <div class="carousel">
+                <div class="container">
+                    <ul id="carousel-ul">
+                        <li><img src="images/pancake.webp" alt="スイーツ１"></li>
+                        <li><img src="images/cream-puffs.webp" alt="スイーツ２"></li>
+                        <li><img src="images/sweets.webp" alt="スイーツ３"></li>
+                        <li><img src="images/strawberry.webp" alt="スイーツ４"></li>
+                    </ul>
+                </div>
+                <div class="button-box">
+                    <button id="prev"><img src="images/prev.png" alt="prev"></button>
+                    <button id="next"><img src="images/next.png" alt="next"></button>
+                </div>
+                <p>あなたはこの写真の中でどれが一番食べたいですか？</p>
+            </div>
+            <script src="JavaScript.js"></script>
+            <!--      -->
+        </section>
+        <div id="go_top">
+            <a href="#fav"><img src="images/go_top.png" alt="go_top"></a>
+        </div>
+    </main>
+    <footer>
+        <a class="go-works" href="javascript:window.close();">作品一覧へ戻る</a>
+        <p class="copyright">&copy;2026_shion</p>
+    </footer>
+    <div class="menu-h">
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label class="menu-icon" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="overlay"></div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="prefecture.html">prefecture</a></li>
+                <li><a href="favorite.html">favorite</a></li>
+                <li><a href="hobby.html">hobby</a></li>
+                <li><a href="reference.html">reference</a></li>
+                <li><a href="javascript:window.close();">作品一覧へ戻る</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

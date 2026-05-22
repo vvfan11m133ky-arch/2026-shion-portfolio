@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shion's profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+    <header>
+        <h1>PROFILE</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="prefecture.html">prefecture</a></li>
+                <li><a href="favorite.html">favorite</a></li>
+                <li><a href="hobby.html">hobby</a></li>
+                <li><a href="reference.html">reference</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="self-introduction">
+            <a href="#top"><img src="images/main-visual-img.webp" alt="main visual" class="main-visual"></a>
+            <div class="greeting">
+                <h2>ようこそ</h2>
+                <p>このサイトは私、<span class="nowrap">朱星についてのプロフィールサイトです。</span>
+                    <br>ぜひご覧になってください。
+                </p>
+            </div>
+            <div class="index-content">
+                <div class="container">
+                    <table class="profile-table">
+                        <tr>
+                            <th>性別</th>
+                            <td>男</td>
+                        </tr>
+                        <tr>
+                            <th>年齢</th>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <th>在住</th>
+                            <td>愛知県内</td>
+                        </tr>
+                        <tr>
+                            <th>好きなもの</th>
+                            <td>甘いもの</td>
+                        </tr>
+                        <tr>
+                            <th>趣味</th>
+                            <td>音楽鑑賞</td>
+                        </tr>
+                    </table>
+                    <p>詳細はページのトップか<br>この下から見ることができるよ！</p>
+                </div>
+            </div>
+        </section>
+        <div class="details container">
+            <div class="item">
+                <a href="prefecture.html">
+                    <p><b>在住</b></p>
+                    <img src="images/aichi.png" alt="愛知県" class="go_page">
+                    <p>私の住む<span class="nowrap">「<mark>愛知県</mark>」</span>について</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="favorite.html">
+                    <p><b>好きなもの</b></p>
+                    <img src="images/parfait.png" alt="甘いもの" class="go_page">
+                    <p>私の好きな<span class="nowrap">「<mark>甘いもの</mark>」</span>について</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="hobby.html">
+                    <p><b>趣味</b></p>
+                    <img src="images/Gclef.png" alt="音楽" class="go_page">
+                    <p>私の趣味<span class="nowrap">「<mark>音楽鑑賞</mark>」</span>について</p>
+                </a>
+            </div>
+        </div>
+        <div id="go_top">
+            <a href="#top"><img src="images/go_top.png" alt="go_top"></a>
+        </div>
+    </main>
+
+    <footer>
+        <a class="go-works" href="javascript:window.close();">作品一覧へ戻る</a>
+        <p class="copyright">&copy;2026_shion</p>
+    </footer>
+    <div class="menu-h">
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label class="menu-icon" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="overlay"></div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="prefecture.html">prefecture</a></li>
+                <li><a href="favorite.html">favorite</a></li>
+                <li><a href="hobby.html">hobby</a></li>
+                <li><a href="reference.html">reference</a></li>
+                <li><a href="javascript:window.close();">作品一覧へ戻る</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

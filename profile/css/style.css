@@ -1,0 +1,544 @@
+html {
+    padding: 0 20%;
+    color: #7f5072;
+    font-family: "Kaisei Decol", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-image: url(../images/back-ground.webp);
+    background-size: contain;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+    margin: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+a:link {
+    color: #7f5072;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7f5072;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B69F5E;
+    text-decoration: none;
+}
+
+a:active {
+    color: #B69F5E;
+    text-decoration: underline;
+}
+
+.header-nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav ul li {
+    padding: 0 20px;
+    background-image: url(../images/icon_1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* メイン */
+main {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    margin: 60px 0 0 0;
+    padding: 10px 0;
+    color: black;
+}
+
+/* 共通 */
+body {
+    margin: 0;
+    background-color: #dbcbc7;
+}
+
+p {
+    line-break: strict;
+}
+
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+nav li {
+    transition: 0.3s;
+}
+
+nav li:hover {
+    transform: translateY(-3px);
+}
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+mark {
+    background-color: rgb(255, 215, 0, 0.5)
+}
+
+.introduction {
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.detail {
+    margin-top: 30px;
+    animation: Fade-In 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.subvisual {
+    max-width: 300px;
+    border: 2px solid #ffffff;
+}
+
+.under-line {
+    margin-bottom: 10px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #7f5072;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.go-works {
+    padding: 5px;
+    color: #7f5072;
+    background-color: lightgoldenrodyellow;
+    border-radius: 8px;
+}
+
+img {
+    width: 60%;
+}
+
+
+#go_top {
+    margin-top: 30px;
+
+}
+
+#go_top img {
+    width: 80px;
+    transition: 0.3s;
+}
+
+#go_top img:hover {
+    transform: translateY(-5px);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+@keyframes Fade-In {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 個別 */
+/* index.html */
+.main-visual {
+    animation: Fade-In 1s;
+}
+
+.greeting {
+    animation: Fade-In 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#top .container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-table {
+    min-width: 180px;
+    margin-right: 80px;
+    border-top: 2px solid #7f7e7e;
+    border-bottom: 2px solid #7f7e7e;
+    border-collapse: collapse;
+}
+
+.profile-table th {
+    border-right: 2px solid #7f7e7e;
+    border-bottom: 2px solid #7f7e7e;
+}
+
+.profile-table td {
+    border-bottom: 2px solid #7f7e7e;
+}
+
+.index-content .container {
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.details {
+    gap: 40px;
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.item {
+    min-width: 100px;
+    transition: 0.4s;
+}
+
+.item:hover {
+    transform: translateY(-20px);
+}
+
+.main-visual {
+    width: 100%;
+    max-width: 650px;
+    border: 8px solid #7f7e7e;
+}
+
+.go_page {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* prefecture.html */
+.prefecture .places {
+    margin-top: 30px;
+}
+
+.places-items {
+    margin: 20px;
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.places-items:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.places-items:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+.places-items:nth-of-type(3) {
+    animation-delay: 1.5s;
+}
+
+/*favorite.html*/
+.carousel p {
+    margin-top: 10px;
+}
+
+/*----カルーセル----*/
+.carousel {
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+    margin: 30px auto;
+    position: relative;
+    animation: Fade-In 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.carousel .container {
+    height: 350px;
+    font-size: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#carousel-ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    transition-duration: .6s;
+}
+
+.carousel li {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+}
+
+.carousel li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #DBCBC7;
+}
+
+button:hover {
+    background-color: black;
+}
+
+button img {
+    width: 22px;
+    height: 22px;
+}
+
+/*hobby.html*/
+.artists {
+    margin-top: 30px;
+}
+
+.artists h2,
+.artists-items {
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.artists h2 {
+    animation-delay: 1s;
+}
+
+.artists-items h3 {
+    transition: 0.3s;
+}
+
+.artists-items h3:hover {
+    transform: translateY(-3px);
+}
+
+.artists-items:nth-of-type(1) {
+    animation-delay: 1.5s;
+}
+
+.artists-items:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+/* reference.html */
+.refe-items {
+    margin-top: 50px;
+    animation: Fade-In 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.refe-items:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.refe-items:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+.refe-items:nth-of-type(3) {
+    animation-delay: 1.5s;
+}
+
+.refe-items:nth-of-type(4) {
+    animation-delay: 2s;
+}
+
+.refe-items h3 {
+    transition: 0.3s;
+}
+
+.refe-items h3:hover {
+    transform: translateY(-3px);
+}
+
+/*----------------- ハンバーガーメニュー ------------------*/
+.menu-h {
+    position: relative;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: inline-block;
+}
+
+.menu-icon span {
+    display: block;
+    height: 4px;
+    margin: 6px 0;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Xに変形 */
+#menu-toggle:checked+.menu-icon span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-icon span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* オーバーレイ背景 */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+#menu-toggle:checked~.overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* メニュー本体（右から出す） */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #7f7e7e;
+    box-shadow: 2px 0 8px rgba(81, 81, 81, 0.2);
+    transition: right 0.4s ease;
+    z-index: 2;
+}
+
+#menu-toggle:checked~.menu {
+    right: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 60px 20px;
+}
+
+.menu li {
+    margin: 20px 0;
+    border-bottom: 4px dotted #eaa3d7;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    color: #eee;
+}
+
+.menu a:hover {
+    color: #d1c092;
+}
+
+/*------------------------------------------------*/
+
+/* モバイル対応 */
+@media (max-width: 767px) {
+    html {
+        padding: 0;
+        background-image: none;
+    }
+
+    body {
+        margin: 0 10%
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    /* index.html */
+    .profile-table {
+        margin-right: 10px;
+    }
+
+    /* prefecture.html */
+    .places-items img {
+        width: 80%;
+    }
+
+    /* favorite.html */
+    .carousel {
+        width: 100%;
+    }
+
+    /* hobby.html */
+    .artists-items img {
+        width: 80%;
+    }
+}

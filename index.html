@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>portfolio</h1>
+    </header>
+    <main>
+        <section id="status">
+            <h2 id="status-title">自己紹介</h2>
+            <p>はじめまして、shionと申します。</p>
+            <p>Webサイト制作の仕事に就きたく、<span class="nowrap">現在は主にJavaScriptやPHPを学習しています。</span></p>
+            <p>この業界に興味を持ったのは、<span class="nowrap">学校の授業でWebサイト制作を学び、</span></p>
+            <p>「デザインが自分の手で実際に形になっていく過程」<span class="nowrap">に楽しさを実感したことがきっかけです。</span></p>
+            <p>学校での学びを通じてWebサイトは<span class="nowrap">「ただ動くだけ」ではなく、</span></p>
+            <p>セキュリティやユーザビリティなどの部分が<span class="nowrap">一番大切であると、とても実感しました。</span></p>
+            <p>また、現在は</p>
+            <p>「渡されたデザインの意図を正しく解釈し、<span class="nowrap">コードに落とし込めるようになること」</span></p>
+            <p>を目標にデザインデータからのコーディングにも<span class="nowrap">取り組んでいます。</span></p>
+            <p>今後はこれらの視点を大切に、質の高いサイト制作で<span class="nowrap">実務に貢献したいと考えています。</span></p>
+        </section>
+        <section id="features">
+            <h2 id="features-title">作品一覧</h2>
+
+            <!-- PHP＆JavaScript使用 -->
+            <section class="category">
+                <h3>JavaScript x PHP</h3>
+                <div class="contact-form">
+                    <p>現在学習中のJavaScriptとPHPを使用して<span class="nowrap">お問い合わせフォームを作成しました。</span></p>
+                    <p>【制作時期：2026年4月～5月】</p>
+                    <p class="go-site"><a href="contact-form/index.php" target="_blank">お問い合わせフォームへ</a></p>
+                    <p class="work-notice">※この作品はPC表示専用の作品となります。</p>
+                    <p>見どころは、より実務に近づけるために</p>
+                    <p>JavaScriptでもPHPでもバリデーションを<span class="nowrap">実装したところです。</span></p>
+                    <p>JavaScriptによるリアルタイムな<span class="nowrap">エラー表示はもちろん、</span></p>
+                    <p>ブラウザのJavaScriptをオフに<span class="nowrap">していただければ、</span></p>
+                    <p>PHPで制御しているバリデーションのエラー表示も<span class="nowrap">しっかり動くように作りこんでいます。</span></p>
+                    <p class="work-notice">※実際のメール送信機能はセキュリティや個人情報保護の観点から</p>
+                    <p class="work-notice">実装しませんでしたが、入力画面から送信完了画面までの遷移は問題なく動きます。</p>
+                </div>
+            </section>
+
+            <!-- デザイン・レスポンシブ対応 -->
+            <section class="category">
+                <h3>Design・Responsive</h3>
+                <div class="profile-site">
+                    <p>デザインやレスポンシブ対応を意識した<span class="nowrap">プロフィールサイトです。</span></p>
+                    <p>【制作時期：2025年12月～2026年1月】</p>
+                    <p class="go-site"><a href="profile/index.html" target="_blank">プロフィールサイトへ</a></p>
+                    <p>学校の課題で制作したサイトです。</p>
+                    <p>いくつかの画像を自作するなど<span class="nowrap">デザインにこだわりつつも、</span></p>
+                    <p>レスポンシブ対応もしました。初めて１から作った<span class="nowrap">作品なので手探りでのスタートでしたが、</span></p>
+                    <p>CSSアニメーションを理解することができた<span class="nowrap">きっかけになりました。</span></p>
+                    <p class="work-notice">※著作権保護のため、使用画像の一部にはぼかし加工をしています。</p>
+                </div>
+
+            </section>
+
+            <!-- JavaScript使用 -->
+            <section class="category">
+                <h3>JavaScript</h3>
+                <p>JavaScriptを使用した機能集です。</p>
+                <p>JavaScriptの書籍で学習しながら作っています。</p>
+                <!-- タブメニュー -->
+                <div class="navigation">
+                    <button type="button" class="navigation-item nowrap active"
+                        data-target="color-picker-area">カラーピッカー</button>
+                    <button type="button" class="navigation-item nowrap"
+                        data-target="check&button-area">チェックとボタン</button>
+                    <button type="button" class="navigation-item nowrap" data-target="darkmode-area">ダークモード</button>
+                    <button type="button" class="navigation-item nowrap" data-target="text-counter">テキストカウンター</button>
+                </div>
+                <!-- コンテンツの表示エリア -->
+                <div class="contents-area">
+                    <!-- カラーピッカー -->
+                    <div id="color-picker-area" class="content visible">
+                        <h4>カラーピッカーで背景色を変更</h4>
+                        <div class="box">
+                            <p id="colorText">カラーコード：？？？</p>
+                            <input id="color-picker" type="color">
+                        </div>
+                    </div>
+                    <div id="check&button-area" class="content ">
+                        <h4>利用規約に同意して、ボタンを有効に</h4>
+                        <label><input id="check" type="checkbox">利用規約に同意する</label>
+                        <input id="check-btn" type="submit" value="送信する" disabled>
+                    </div>
+                    <div id="darkmode-area" class="content ">
+                        <h4>ボタンを押してダークモードに</h4>
+                        <p><button id="darkmode-btn">ダークモードにする</button></p>
+                        <blockquote>
+                            <p>親譲りの無鉄砲で小供の時から損ばかりしている。</p>
+                            <p>小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
+                            <p>なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。</p>
+                            <p>新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、</p>
+                            <p>そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。...（青空文庫より）</p>
+                        </blockquote>
+                    </div>
+                    <div id="text-counter" class="content ">
+                        <h4>文字数のカウントと警告表示</h4>
+                        <p><textarea id="text-area"></textarea></p>
+                        <p>100文字以内で入力してください。</p>
+                        <p>現在<span id="text-count">0</span>文字</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>&copy;2026_shion</footer>
+</body>
+
+</html>

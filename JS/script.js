@@ -1,5 +1,5 @@
 // タブの切り替え---------------------------------------------
-const buttons = document.querySelectorAll(".navigation-item")
+const buttons = document.querySelectorAll(".tab-menu-item")
 const contents = document.querySelectorAll(".content");
 
 buttons.forEach(button => {

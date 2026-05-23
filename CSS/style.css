@@ -87,17 +87,30 @@ h4 {
     text-wrap: nowrap;
 }
 
-/* タブメニュー ----------------------------*/
-.navigation {
-    margin-top: 30px;
-    font-size: 2vw;
-    display: flex;
-    gap: 3px;
-    justify-content: center;
-
+#go-GitHub {
+    margin-top: 1rem;
+    font-size: .8rem;
+    background-color: lightgray;
 }
 
-.navigation-item {
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* タブメニュー ----------------------------*/
+.tab-menu {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    background-color: rgb(245, 245, 245);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tab-menu-item {
     padding: 5px;
     color: rgb(0, 0, 90);
     background-color: #eae7e0;
@@ -105,13 +118,13 @@ h4 {
     transition: .3s;
 }
 
-.navigation-item:hover {
+.tab-menu-item:hover {
     transform: translateY(-5px);
     transition: .3s;
 }
 
 /* 選択されているボタンの見た目 */
-.navigation-item.active {
+.tab-menu-item.active {
     font-weight: bold;
     background-color: #c5c4c0;
 }
@@ -197,10 +210,6 @@ h4 {
     html {
         font-size: 16px;
         min-width: 320px;
-    }
-
-    .navigation-item {
-        font-size: 0.65rem;
     }
 
     .box {

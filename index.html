@@ -74,13 +74,12 @@
                 <div class="tab-menu">
                     <button type="button" class="tab-menu-item nowrap active"
                         data-target="color-picker-area">カラーピッカー</button>
-                    <button type="button" class="tab-menu-item nowrap" data-target="check&button-area">チェックとボタン</button>
-                    <button type="button" class="tab-menu-item nowrap" data-target="darkmode-area">ダークモード</button>
-                    <button type="button" class="tab-menu-item nowrap" data-target="text-counter">テキストカウンター</button>
+                    <button type="button" class="tab-menu-item" data-target="check&button-area">チェックとボタン</button>
+                    <button type="button" class="tab-menu-item" data-target="darkmode-area">ダークモード</button>
+                    <button type="button" class="tab-menu-item" data-target="text-counter-area">テキストカウンター</button>
                 </div>
                 <!-- コンテンツの表示エリア -->
                 <div class="contents-area">
-                    <!-- カラーピッカー -->
                     <div id="color-picker-area" class="content visible">
                         <h4>カラーピッカーで背景色を変更</h4>
                         <div class="box">
@@ -91,7 +90,7 @@
                     <div id="check&button-area" class="content ">
                         <h4>利用規約に同意して、ボタンを有効に</h4>
                         <label><input id="check" type="checkbox">利用規約に同意する</label>
-                        <input id="check-btn" type="submit" value="送信する" disabled>
+                        <button id="check-btn" disabled>送信する</button>
                     </div>
                     <div id="darkmode-area" class="content ">
                         <h4>ボタンを押してダークモードに</h4>
@@ -104,7 +103,7 @@
                             <p>そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。...（青空文庫より）</p>
                         </blockquote>
                     </div>
-                    <div id="text-counter" class="content ">
+                    <div id="text-counter-area" class="content ">
                         <h4>文字数のカウントと警告表示</h4>
                         <p><textarea id="text-area"></textarea></p>
                         <p>100文字以内で入力してください。</p>

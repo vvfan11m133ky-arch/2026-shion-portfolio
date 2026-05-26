@@ -1,4 +1,4 @@
-// タブの切り替え---------------------------------------------
+// タブの切り替えとコンテンツの表示-----------------------------
 const buttons = document.querySelectorAll(".tab-menu-item")
 const contents = document.querySelectorAll(".content");
 
@@ -14,16 +14,13 @@ buttons.forEach(button => {
 
         // idが同じ要素を表示。そうでなければ非表示
         contents.forEach(content => {
-            if (content.id === targetId) {
-                content.classList.add("visible");
-            } else {
-                content.classList.remove("visible");
-            }
+            const flag = (content.id === targetId);
+            content.classList.toggle('visible', flag);
         })
     })
 })
 //-----------------------------------------------------------
-//color-picker用---------------------------------------------
+//カラーピッカー用--------------------------------------------
 const cText = document.querySelector('#colorText');
 const color = document.querySelector('#color-picker');
 const colorArea = document.querySelector('#color-picker-area')
@@ -39,12 +36,11 @@ const colorBg = () => {
     }
     // 選択した色を背景色に適用
     colorArea.style.backgroundColor = color.value;
-    // text.style.color = color.value;
 }
 
 color.addEventListener('input', colorBg);
 //-----------------------------------------------------------
-//check&button用---------------------------------------------
+//チェックとボタン用---------------------------------------------
 const isAgreed = document.querySelector('#check');
 const cBtn = document.querySelector('#check-btn');
 
@@ -53,7 +49,7 @@ isAgreed.addEventListener('change', () => {
     cBtn.disabled = !isAgreed.checked
 });
 //-----------------------------------------------------------
-//darkmode用-------------------------------------------------
+//ダークモード用-------------------------------------------------
 const dmBtn = document.querySelector('#darkmode-btn');
 const dmArea = document.querySelector('#darkmode-area');
 
@@ -67,7 +63,7 @@ dmBtn.addEventListener('click', () => {
     }
 })
 //-----------------------------------------------------------
-//text-counter用---------------------------------------------
+//テキストカウンター用----------------------------------------
 const text = document.querySelector('#text-area');
 const count = document.querySelector('#text-count');
 
@@ -82,3 +78,4 @@ text.addEventListener('keyup', () => {
         count.classList.remove('alert');
     }
 })
+//-----------------------------------------------------------

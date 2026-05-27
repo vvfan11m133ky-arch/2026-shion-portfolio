@@ -3,6 +3,9 @@
 今までの作品をまとめたポートフォリオサイトです。  
 HTML/CSS/JavaScriptを使用したフロントエンドと、  
 PHPでのバックエンドとの連携を学習するために作成しました。
+### 補足
+- **習得言語**： HTML / CSS / Java / C#
+- **学習中言語**： JavaScript / TypeScript / PHP
 
 [ポートフォリオサイトへ](https://shion-portfolio.infinityfreeapp.com/)
 
